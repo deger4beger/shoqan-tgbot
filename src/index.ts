@@ -1,12 +1,8 @@
-import TgBot from "node-telegram-bot-api"
-import { config } from "./lib/config"
+import { TelegramBot } from "./app"
 
-export class TelegramBot {
-
-	private readonly bot
-
-	constructor() {
-		this.bot = new TgBot(config.token, { polling: true })
-	}
-
+function createBot() {
+	const bot = new TelegramBot()
+	bot.start()
 }
+
+createBot()
