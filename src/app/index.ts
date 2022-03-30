@@ -12,7 +12,7 @@ export class TelegramBot {
 
 	start() {
 		this.bot.on("message", msg => {
-					const text = msg.text
+			const text = msg.text
        		const chatId = msg.chat.id
 			switch (text) {
 				case MessageCommands.Start: {
