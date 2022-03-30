@@ -1,1 +1,3 @@
-export enum MessageCommands {}
+export enum MessageCommands {
+	Start = "/start"
+}
