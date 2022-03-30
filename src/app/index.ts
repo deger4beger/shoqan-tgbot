@@ -12,13 +12,13 @@ export class TelegramBot {
 
 	start() {
 		this.bot.on("message", msg => {
-			const text = msg.text
-       		const chatId = msg.chat.id
+			const text = msg.text;
+       		const chatId = msg.chat.id;
 			switch (text) {
 				case MessageCommands.Start: {
 					this.bot.sendMessage(chatId, "Добро пожаловать петушок")
 				}
-			}
+			};
 
 		})
 	}
